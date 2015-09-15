@@ -1,0 +1,124 @@
+insert into users(100540001,'Harry','Potter','31 B Privet Dr','London England',27605,'9189327078','9176326078','21-JUL-1991','M','British','N','N','Placed','Sirius Black','Godfather','12 Grimmauld Place','9439560752','No');
+
+INSERT INTO USERS VALUES(200540001,’VIKTOR’,’KRUM’,’32 A, KRUM ROAD’,’SOFIA’,2221,’9198333567’,’91983332233’,’29-NOV-1982’,’M’,’BULGARIAN’,’Y’,’N’,’PLACED’,’IGOR KARKAROFF’,’HEADMASTER’,’32 A, KRUM ROAD, SOFIA-2221, BULGARIA’,’94363530752’,’N’,’BULGARIA’);
+
+INSERT INTO USERS VALUES(200540002,'OLYMPE','MAXIME','32 A, MAXIME ROAD','PARIS',2331,'9197773567','N','19-MAY-1970','F','FRENCH','Y','N','PLACED','BATHILDA BAGSHOT','FRIEND','32 A, BAGSHOT ROAD, ZURICH-35221, SWITZERLAND','94363595752','N','FRANCE');
+
+insert into STUDENTS values(100540001, 'FRESHMAN', '', 'Defence Against Dark...');
+
+insert into STUDENTS values(100540002, 'FRESHMAN', '', 'Muggle Studies');
+
+insert into STUDENTS values(100540007, 'GRADUATE', null, 'Potions');
+
+INSERT INTO GUESTS VALUES(200540001,NULL,'COACHING - TRIWIZARD CUP','VISITOR');
+
+INSERT INTO GUESTS VALUES(200540002,NULL,'GUEST LECTURER - TRIWIZARD CUP','VISITOR');
+
+insert into  "PARKING_LOT" ("LOT_ID", "LOT_TYPE") values(1, 'PRIVATE');
+insert into  "PARKING_LOT" ("LOT_ID", "LOT_TYPE") values(2, 'PRIVATE');
+insert into  "PARKING_LOT" ("LOT_ID", "LOT_TYPE") values(3, 'PRIVATE');
+insert into  "PARKING_LOT" ("LOT_ID", "LOT_TYPE") values(4, 'PRIVATE');
+insert into  "PARKING_LOT" ("LOT_ID", "LOT_TYPE") values(5, 'PRIVATE');
+insert into  "PARKING_LOT" ("LOT_ID", "LOT_TYPE") values(6, 'PRIVATE');
+insert into  "PARKING_LOT" ("LOT_ID", "LOT_TYPE") values(7, 'GENERAL');
+
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(2, 'B', '', 30, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(3, 'SC', '', 35, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(4, 'LC', '', 40, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(5, 'HC', '', 25, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(6, 'B', '', 30, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(7, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(8, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(9, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(10, 'LC', '', 40, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(11, 'HC', '', 25, 3, 'Y');
+nsert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(1, 'HC', null, 25, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(2, 'B', '', 30, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(3, 'SC', '', 35, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(4, 'LC', '', 40, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(5, 'HC', '', 25, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(6, 'B', '', 30, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(7, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(8, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(9, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(10, 'LC', '', 40, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(11, 'HC', '', 25, 3, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(1, 'HC', null, 25, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(2, 'B', '', 30, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(3, 'SC', '', 35, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(4, 'LC', '', 40, 1, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(5, 'HC', '', 25, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(6, 'B', '', 30, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(7, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(8, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(9, 'SC', '', 35, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(10, 'LC', '', 40, 2, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(11, 'HC', '', 25, 3, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(41, 'HC', '', 25, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(42, 'HC', '', 25, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(43, 'B', '', 30, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(44, 'B', '', 30, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(45, 'SC', '', 35, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(46, 'SC', '', 35, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(47, 'SC', '', 35, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(48, 'SC', '', 35, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(49, 'SC', '', 35, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(50, 'LC', '', 40, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(51, 'LC', '', 40, 7, 'Y');
+insert into  "PARKING_SPOT" ("SPOT_ID", "SPOT_TYPE", "SPOT_HANDICAPPED", "SPOT_FEE", "LOT_ID", "SPOT_AVAIL") values(52, 'LC', '', 40, 7, 'Y');
+
+INSERT INTO HOUSING_OPTION VALUES('RH2', 'R','919-540-001', 'SEVERUS SNAPE',  '210 DAN ALLEN DR, RALEIGH, NC 27695', 'SLYTHERIN HALL','N');
+
+INSERT INTO HOUSING_OPTION VALUES('GA1’', 'G','919-540-003', 'FILIUS FLITWICK',  '315 GORMAN CROSSINGS, RALEIGH, NC 27606', 'RAVENCLAW','Y');
+
+INSERT INTO HOUSING_OPTION VALUES('GA2’', 'G','919-540-003', 'FILIUS FLITWICK',  '315 GORMAN CROSSINGS, RALEIGH, NC 27606', 'RAVENCLAW','Y');
+
+insert into  "HOUSING_OPTION" ("HO_ID", "HO_TYPE", "HO_PHONE", "HO_MNGR", "HO_ADDR", "HO_NAME", "AVAIL_TO_ALL") values('GA2', 'G', '919-540-004', 'POMONA SPROUT', '515, UNIVERSITY COMM...', 'HUFFLEPUFF', 'Y');
+
+insert into  "HOUSING_OPTION" ("HO_ID", "HO_TYPE", "HO_PHONE", "HO_MNGR", "HO_ADDR", "HO_NAME", "AVAIL_TO_ALL") values('FA1', 'F', '919-540-005', 'ALBUS DUMBLEDORE', '300, WADE AVENUE, RA...', 'HOGWARTS', 'Y');
+
+insert into  "RESHALL" ("RH_PLACE", "RH_HO_ID", "RH_LEASE_NO", "RH_RENT", "RH_SD") values(2, 'RH1', 0, 400, 400);
+insert into  "RESHALL" ("RH_PLACE", "RH_HO_ID", "RH_LEASE_NO", "RH_RENT", "RH_SD") values(3, 'RH1', 0, 400, 400);
+insert into  "RESHALL" ("RH_PLACE", "RH_HO_ID", "RH_LEASE_NO", "RH_RENT", "RH_SD") values(4, 'RH1', 0, 400, 400);
+insert into  "RESHALL" ("RH_PLACE", "RH_HO_ID", "RH_LEASE_NO", "RH_RENT", "RH_SD") values(5, 'RH1', 0, 400, 400);
+insert into  "RESHALL" ("RH_PLACE", "RH_HO_ID", "RH_LEASE_NO", "RH_RENT", "RH_SD") values(6, 'RH2', 0, 450, 500);
+insert into  "RESHALL" ("RH_PLACE", "RH_HO_ID", "RH_LEASE_NO", "RH_RENT", "RH_SD") values(7, 'RH2', 0, 450, 500);
+
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT1', 101, 1, 1, 1, 350, 400, 'GA1', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT1', 101, 2, 2, 2, 350, 400, 'GA1', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT1', 101, 3, 3, 3, 350, 400, 'GA1', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT2', 102, 1, 1, 4, 350, 400, 'GA1', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT2', 102, 2, 2, 5, 350, 400, 'GA1', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT2', 102, 3, 3, 6, 350, 400, 'GA1', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT2', 102, 4, 4, 7, 350, 400, 'GA1', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT1', 103, 1, 1, 8, 375, 450, 'GA2', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT1', 103, 2, 2, 9, 375, 450, 'GA2', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT1', 103, 3, 3, 10, 375, 450, 'GA2', 0);
+insert into  "GAAPT" ("APT_NAME", "APT_NO", "GA_BED_NO", "GA_BATH_NO", "GA_PLACE_NO", "GA_ROOM_RENT", "GA_SD", "GA_HO_ID", "GA_LEASE_NO") values('APT2', 104, 1, 1, 11, 375, 450, 'GA2', 0);
+
+insert into  "FAMAPT" ("APT_NAME", "APT_NO", "FAM_BED", "FAM_RENT", "FAM_SD", "FAM_HO_ID", "FAM_LEASE_NO") values('APT1', 105, 1, 450, 500, 'FA1', 0);
+insert into  "FAMAPT" ("APT_NAME", "APT_NO", "FAM_BED", "FAM_RENT", "FAM_SD", "FAM_HO_ID", "FAM_LEASE_NO") values('APT2', 106, 2, 550, 600, 'FA1', 0);
+insert into  "FAMAPT" ("APT_NAME", "APT_NO", "FAM_BED", "FAM_RENT", "FAM_SD", "FAM_HO_ID", "FAM_LEASE_NO") values('APT3', 107, 3, 700, 800, 'FA1', 0);
+
+nsert into  "HOUSING_TO_LOT" ("HTS_HOUSING_ID", "HTS_LOT_ID") values('RH2', 2);
+insert into  "HOUSING_TO_LOT" ("HTS_HOUSING_ID", "HTS_LOT_ID") values('GA1', 3);
+insert into  "HOUSING_TO_LOT" ("HTS_HOUSING_ID", "HTS_LOT_ID") values('GA1', 4);
+insert into  "HOUSING_TO_LOT" ("HTS_HOUSING_ID", "HTS_LOT_ID") values('GA2', 5);
+insert into  "HOUSING_TO_LOT" ("HTS_HOUSING_ID", "HTS_LOT_ID") values('FA1', 6);
+
+insert into  "STAFF" ("S_NO", "S_NAME", "S_STREET", "S_CITY", "S_POSTCODE", "S_DOB", "S_SEX", "S_POSITION", "S_LOCATION", "S_COUNTRY") values(101, 'MINERVA MCGONGALL', 'MCGONAGALL ROAD', 'DELHI', 11, '4-OCT-1950', 'F', 'HM', 'GRYFFINDOR HALL', 'INDIA');
+insert into  "STAFF" ("S_NO", "S_NAME", "S_STREET", "S_CITY", "S_POSTCODE", "S_DOB", "S_SEX", "S_POSITION", "S_LOCATION", "S_COUNTRY") values(102, 'SEVERUS SNAPE', 'SNAPE ROAD', 'LAHORE', 7, '7-SEP-1953', 'M', 'HM', 'SLYTHERIN HALL', 'PAKISTAN');
+insert into  "STAFF" ("S_NO", "S_NAME", "S_STREET", "S_CITY", "S_POSTCODE", "S_DOB", "S_SEX", "S_POSITION", "S_LOCATION", "S_COUNTRY") values(103, 'FILIUS FLITWICK', 'FLITWICK ROAD', 'SYDNEY', 50, '6-OCT-1960', 'M', 'HM', 'RAVENCLAW HALL', 'AUSTRALIA');
+insert into  "STAFF" ("S_NO", "S_NAME", "S_STREET", "S_CITY", "S_POSTCODE", "S_DOB", "S_SEX", "S_POSITION", "S_LOCATION", "S_COUNTRY") values(104, 'POMONA SPROUT', 'SPROUT ROAD', 'BERLIN', 5963, '16-OCT-1965', 'F', 'HM', 'HUFFLEPUFF HALL', 'GERMANY');
+insert into  "STAFF" ("S_NO", "S_NAME", "S_STREET", "S_CITY", "S_POSTCODE", "S_DOB", "S_SEX", "S_POSITION", "S_LOCATION", "S_COUNTRY") values(105, 'ALBUS DUMBLEDORE', 'DUMBLEDORE ROAD', 'GANDHINAGAR', 382007, '23-APR-1945', 'M', 'HM', 'HOGWARTS HALL', 'INDIA');
+
+insert into  "FAM_STUD" ("F_FN", "F_LN", "F_DOB", "F_RELATIONSHIP", "SID") values('FLEUR ', 'DELACOUR', '31-MAR-1984', '', 100540007);
+insert into  "FAM_STUD" ("F_FN", "F_LN", "F_DOB", "F_RELATIONSHIP", "SID") values('PETUNIA', 'DURSLEY', '13-DEC-1978', '', 100540008);
+insert into  "FAM_STUD" ("F_FN", "F_LN", "F_DOB", "SID") values('DUDLEY', 'DURSLEY', '26-JUN-2000', 100540008);
+
+
+
+
+
+
+

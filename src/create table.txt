@@ -1,0 +1,43 @@
+create table students(sid int NOT NULL PRIMARY KEY REFERENCES users(user_no), s_category char(20),interests char(20),s_courses char(50));
+
+create table users(user_no int, fname char(20), lname char(20), street char(20), city char(20), zipcode int, phone char(20), a_phone char(20), dob date, sex char(2), nationality char(20), smoker char(2), special char(40), status char(20), kin_name char(20), kin_relation char(20), kin_addr char(50), kin_phone varchar2(20), family char(10), primary key(user_no)); 
+
+create table guests(app_id int NOT NULL PRIMARY KEY REFERENCES USERS(user_no), g_interests char(30), g_courses char(50), g_cat char(20));
+
+create table fam_stud(F_FN CHAR(20), F_LN CHAR(20), F_DOB  DATE, F_RELATIONSHIP CHAR(20), sid int, primary key(f_fn,f_ln, sid), foreign key(sid) references students ON DELETE CASCADE);
+
+create table fam_guest(F_FN CHAR(20), F_LN CHAR(20), F_DOB  DATE, F_RELATIONSHIP CHAR(20), app_id int, primary key(f_fn,f_ln, app_id), foreign key(app_id) references guests ON DELETE CASCADE);
+
+create table tickets(t_no int,t_type char(20),t_sdate date,t_edate date,t_location char(20), t_status char(20), t_user int, t_desc char(100), primary key(t_no), foreign key (t_user) references users(user_no));
+
+create table staff(s_no int, s_name char(30), s_street char(20),s_city char(20),s_postcode int, s_dob date,s_sex char(20),s_position char(20),s_location char(20), primary key(s_no)); 	
+
+create table staff_to_ticket(s_no int, t_no int, primary key(s_no, t_no), foreign key(s_no) references staff, foreign key(t_no) references tickets);
+
+create table lease (l_no int, l_duration int, lpsdate date, lpedate date, payment_option char(20), s_deposit int, parking_permit int, l_pspot int, l_penalty int, l_inpection date, user_num int, primary key(l_no),foreign key(user_num) references users(user_no));
+
+create table request(r_no int,r_sdate date,r_edate date,r_type char(20), r_status char(20),r_user_no int, p1 char(20), p2 char(20), p3 char(20), pay_type char(10), p_vehicle_type char(20), p_handicap char(3), r_duration int, primary key(r_no), foreign key(r_user_no) references users(user_no));
+
+create table request_to_staff(r_no int, s_no int, primary key(r_no,s_no), foreign key(r_no) references request, foreign key(s_no) references staff);
+
+create table invoice (i_no int,monthly_rent int,monthly_prent int,i_startdate date, i_enddate date, paid_date date,methodofpay char(20),total_bill int, misc_charges int, user_number int,status char(2), primary key(i_no), foreign key(user_number) references users(user_no));
+
+CREATE TABLE Parking_lot (lot_id INTEGER, lot_type CHAR(8), PRIMARY KEY (lot_id));
+
+CREATE TABLE Parking_spot(spot_id INTEGER NOT NULL PRIMARY KEY, spot_type CHAR(15), spot_handicapped CHAR(3), spot_fee INTEGER, lot_id INTEGER REFERENCES Parking_lot(lot_id), spot_avail char(5));
+
+create table housing_to_lot(hts_housing_id char(5), hts_lot_id int, primary key(hts_housing_id, hts_lot_id), foreign key(hts_housing_id) references Housing_option(ho_id), foreign key(hts_lot_id) references Parking_lot(lot_id));
+
+create table housing_option (ho_id char(5), ho_type char(5), HO_PHONE char(20), ho_mngr char(20), HO_ADDR CHAR(100), ho_name char(20), avail_to_all char(5), PRIMARY KEY(ho_id));
+
+create table private_acc(RH_HO_ID char(5) not null primary key references housing_option(ho_id), pa_rent int, pa_dep int, pr_lease_no int);
+
+create table reshall( RH_PLACE  int not null primary key, RH_HO_ID char(5) not null references housing_option(ho_id), RH_Lease_No int, RH_Rent int, RH_SD int);
+
+create table FAMAPT( APT_NAME CHAR(10), APT_NO int not null primary key, FAM_BED INT,FAM_RENT INT , FAM_SD INT,  FAM_HO_ID char(5) not null references housing_option(ho_id), FAM_Lease_No int);
+
+create table GAAPT( APT_NAME CHAR(10), APT_NO int, GA_BED_NO INT,GA_BATH_NO INT,GA_PLACE_NO INT NOT NULL PRIMARY KEY, GA_ROOM_RENT INT , GA_SD INT,  GA_HO_ID char(5) not null references housing_option(ho_id), GA_Lease_No int);
+
+Constraints:
+The user authenticates his/herself by authorization id and can see a menu of options available to him/her. We have captured almost all the constraints as described in the project description. A user with family can view all the place numbers vacant in family apartments whereas a user without family can see only general apartments and residence halls. We have created students family and guests family as weak entities dependent on students and guests respectively. Moreover, invoices is a weak entity dependent on users. A user can raise 0 or more requests as well as tickets similarly, staff can access 0 or more tickets and requests simultaneously. A lease can be for exactly 1 housing_option. There can be at least one parking lot for one housing_option and vice versa is also true. There will be exactly one parking lot for multiple parking spots. This is how our ER is made accordingly. Our assumptions are mentioned in our report.
+
